@@ -1,0 +1,72 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <link rel="stylesheet" href="web design.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+        <title>Web Design</title>
+      </head>
+
+    <body>
+        <section class="header">
+            <nav>
+                <a href="web design.html"><img src="logo.png"></a>
+                <div class="nav-links" id="navlinks">
+                    <ul Id="menulist">
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">ABOUT</a></li>
+                        <li><a href="">CONTACT</a></li>    
+                        <li><a href="sign in.html"><button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'" style="width:auto;">Sign In</button></a></li>                
+                    </ul>
+                </div>
+                <image src="baricon.png" class="menu-icon" onclick="togglemenu()">
+            </nav>
+
+            <div class ="row">
+                <div class="col-1">
+                    <h1>GOODNESS</h1>
+                    <p>Welcome to my website<br> Are you willing to earn up to $100k-$500k per month?? Register Now  </p>
+                </div>
+                <div class="col-2">
+                    <div class="sign-up-form">
+                        <img src="iconb.png">
+                        <h1>Sign Up Now</h1>
+                        <form>
+                            <input type="email" class="input-box" placeholder="Email Id">
+                            <input type="password" class="input-box" placeholder="Password">
+                            <p><span><input type="checkbox"></span>I agree to terms and conditions</p>
+                            <a href=""></a><button type="button" class="signup-btn">Sign up</button></a>
+                            <hr>
+                            <p class="or">OR</p>
+                            <button type="button" class="google-btn">Login with Google</button>
+                            <p>Do you have an account? <a href="sign in.html">Sign in</a></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script>
+
+            var menulist = document.getElementById("menulist");
+
+            menulist.style.maxHeight = "0px";
+
+            function togglemenu(){
+
+                if(menulist.style.maxHeight == "0px")
+                {
+                    menulist.style.maxHeight = "130px";
+                }
+                else
+                {
+                    menulist.style.maxHeight = "0px";
+                }
+
+            }
+
+        </script>
+    </body>
+</html>
